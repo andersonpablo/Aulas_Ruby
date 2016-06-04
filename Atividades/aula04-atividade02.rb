@@ -1,0 +1,2 @@
+puts "Ola mundo"
+gets
