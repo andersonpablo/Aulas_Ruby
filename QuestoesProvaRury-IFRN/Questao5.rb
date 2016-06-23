@@ -1,4 +1,4 @@
-Crie um script em Ruby que lÍ trÍs valores, ëaí, ëbí e ëcí e dizer se estes valores podem ser os lados de um tri‚ngulo. Para um tri‚ngulo ser formado, a soma de dois lados deve ser maior do que o terceiro lado: a + b > c e a + c > b e b + c > a.
+#Crie um script em Ruby que l√™ tr√™s valores, ‚Äòa‚Äô, ‚Äòb‚Äô e ‚Äòc‚Äô e dizer se estes valores podem ser os lados de um tri√¢ngulo. Para um tri√¢ngulo ser formado, a soma de dois lados deve ser maior do que o terceiro lado: a + b > c e a + c > b e b + c > a.
 
 puts "Digite um valor"
 a = gets.to_i
@@ -8,7 +8,7 @@ puts "Digite um valor"
 c = gets.to_f
 
 if ((a + b > c) and (a + c > b) and (b + c > a))
-	puts "forma um tri‚ngulo"
+	puts "forma um tri√¢ngulo"
 else 
-	puts "n„o forma um tri‚ngulo"
+	puts "n√£o forma um tri√¢ngulo"
 end
