@@ -21,7 +21,7 @@ puts "Para sair tecle ENTER ou qualquer tecla para continuar"
 enter = gets.chomp
 
 	if enter == "" 
-		puts nomeIdade
+		puts "Você teclou ENTER e saiu do programa"
 	else 
 		puts "Digite um nome"
 		nome = gets.chomp
@@ -31,8 +31,7 @@ enter = gets.chomp
 	end
 
 end while (enter != "")
-	puts "Você teclou ENTER e saiu do programa"
 
-# meu_hash.each do |chave, valor|
-# puts "A posição #{chave} guarda o valor #{valor}"
-# end
+nomeIdade.each do |nome, idade|
+ puts "#{nome} tem #{idade} anos"
+ end
