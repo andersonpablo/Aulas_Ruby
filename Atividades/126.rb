@@ -32,6 +32,14 @@ enter = gets.chomp
 
 end while (enter != "")
 
+ac = 0
+acc = 0
 nomeIdade.each do |nome, idade|
- puts "#{nome} tem #{idade} anos"
+ if idade >= 18
+ 	ac = (ac + 1)
+ elsif (idade >= 0) && (idade <=18)
+ 	acc = (acc + 1)
+ else 
+ 	puts "idade inválida"
+ #puts "#{nome} tem #{idade} anos"
  end
