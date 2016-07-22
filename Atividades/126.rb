@@ -13,7 +13,7 @@ A média das idades.
 nomeIdade = Hash.new
 
 enter = 0
-
+calcIdade = 0
 
 begin
 
@@ -28,18 +28,27 @@ enter = gets.chomp
 		puts "Digite uma idade"
 		idade = gets.chomp.to_i
 		nomeIdade[nome] = idade
+
+		calcIdade = (calcIdade + idade)
 	end
 
 end while (enter != "")
 
 ac = 0
 acc = 0
+
 nomeIdade.each do |nome, idade|
+
  if idade >= 18
  	ac = (ac + 1)
  elsif (idade >= 0) && (idade <=18)
  	acc = (acc + 1)
  else 
  	puts "idade inválida"
- #puts "#{nome} tem #{idade} anos"
  end
+end
+  media = (calcIdade / (ac + acc))
+  puts "maior que 18 anos: #{ac}"
+  puts "menor que 18 anos: #{acc}"
+  puts "media das idades: #{media}"
+  #puts "#{nome} tem #{idade} anos"
