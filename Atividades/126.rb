@@ -14,14 +14,24 @@ nomeIdade = Hash.new
 
 enter = 0
 
-puts "Digite um nome"
-nome = gets.chomp
-puts "Digite uma idade"
-idade = gets.chomp.to_i
-nomeIdade[nome] = idade
+
+begin
+
+puts "Para sair tecle ENTER ou qualquer tecla para continuar"
+enter = gets.chomp
+
+	if enter == "" 
+		puts nomeIdade
+	else 
+		puts "Digite um nome"
+		nome = gets.chomp
+		puts "Digite uma idade"
+		idade = gets.chomp.to_i
+		nomeIdade[nome] = idade
+	end
 
 end while (enter != "")
-puts nomeIdade
+	puts "Você teclou ENTER e saiu do programa"
 
 # meu_hash.each do |chave, valor|
 # puts "A posição #{chave} guarda o valor #{valor}"
