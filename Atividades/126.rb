@@ -18,6 +18,7 @@ nomeIdade = Hash.new
 enter = 0
 calcIdade = 0
 entradas = 0
+
 # Entradas
 
 begin
