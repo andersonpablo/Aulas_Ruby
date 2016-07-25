@@ -1,0 +1,22 @@
+=begin
+Crie um script em Ruby e defina a função maior. 
+A função deve receber uma quantidade variável de parâmetros e exibir na tela o maior valor recebido.	
+=end
+
+
+def maior(*numeros)
+
+i = 0
+maior = numeros[0]
+
+	while i < 7
+	# for i in (0..numeros.length) do
+		if (numeros[i] < maior)
+			maior = numeros[i]
+		
+		end
+puts maior
+	end
+
+end
+maior(20,2,3,5,9,10,30)
