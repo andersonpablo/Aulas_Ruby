@@ -60,6 +60,7 @@ enter = gets.chomp
 end while (enter != "")
 
 # AC e ACC = account = contador
+
 ac = 0
 acc = 0
 
