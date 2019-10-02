@@ -11,15 +11,15 @@ Total de pessoas com mais de 50 anos.
 	ac = 0
 begin
 
-	puts "\n\t Digite "
+	puts "\n\t Digite um valor positivo, caso contrário o programa será fechado"
 	idade = gets.chomp.to_i
 
 	if (idade < 21)
-		menos++
+		menosDe21++
 	elsif (idade > 50) 
-		mais++
+		maisDe50++
 	end
 
-puts "Quantidade de pessoas com menos de 21 anos:  #{menos} \nE total de pessoas com mais de 50 anos: #{mais}"
+puts "Quantidade de pessoas com menos de 21 anos:  #{menosDe21} \nE total de pessoas com mais de 50 anos: #{maisDe50}"
 end while numero < 0
 gets
