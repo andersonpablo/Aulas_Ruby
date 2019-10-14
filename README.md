@@ -1,3 +1,2 @@
 # Aulas_Ruby
-Exercícios Ruby
-teste
+Exercícios feitos em Ruby
